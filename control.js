@@ -14,13 +14,35 @@ multiply()
 //Question 2
 function takeArray(){
     let arrNum=[1,2,3,4,5,6,7,8,9];
-    let i=5
-    while(i>5 && i<[4]){
-        console.log("This is  not index four")
-        if (i=[4]){
-            console.log("This is index four")
+    
+    while(arrNum.length=[4]){
+        console.log(arrNum)
+    
             break;
         }
     }
-}
+
 takeArray()
+//Question 3
+function contStatement(){
+    let fruits=["apple","plum","banana","strawberries","kiwi"]
+    for(i=0;i<fruits.length;i++){
+        if(i==2)
+        continue;
+        console.log(fruits[i])
+    }
+   
+}
+contStatement()
+//Question 4
+function acceptArr(){
+    const arr=["Val","Eve","Jane","Erick"]
+    arr.forEach((x)=>{
+        console.log(arr)
+    })
+}
+contStatement()
+//Question 5
+function takeString(){
+    let a="Patrick"
+}
