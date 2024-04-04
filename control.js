@@ -1,48 +1,54 @@
 //Question 1
-function multiply(){
-    const arrayOfNumbers=[2,5,7,9,10,11,12]
-    const x=arrayOfNumbers.slice(0,4).map(y=>y*y);
-        const z=arrayOfNumbers.slice(-2).map(w=>w+10);
-        const d=arrayOfNumbers.slice(4,-2);
-        const merged = [ ...x, ...d, ...z];
-        console.log(merged)
-        return merged 
-        
+function multiply() {
+  const arrayOfNumbers = [2, 5, 7, 9, 10, 11, 12];
+  const x = arrayOfNumbers.slice(0, 4).map((y) => y * y);
+  const z = arrayOfNumbers.slice(-2).map((w) => w + 10);
+  const d = arrayOfNumbers.slice(4, -2);
+  const merged = [...x, ...d, ...z];
+  console.log(merged);
+  return merged;
 }
 
-multiply()
+multiply();
 //Question 2
-function takeArray(){
-    let arrNum=[1,2,3,4,5,6,7,8,9];
-    
-    while(arrNum.length=[4]){
-        console.log(arrNum)
-    
-            break;
-        }
-    }
+function takeArray() {
+  let arrNum = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-takeArray()
+  while ((arrNum.length = [4])) {
+    console.log(arrNum);
+
+    break;
+  }
+}
+
+takeArray();
 //Question 3
-function contStatement(){
-    let fruits=["apple","plum","banana","strawberries","kiwi"]
-    for(i=0;i<fruits.length;i++){
-        if(i==2)
-        continue;
-        console.log(fruits[i])
-    }
-   
+function contStatement() {
+  let fruits = ["apple", "plum", "banana", "strawberries", "kiwi"];
+  for (i = 0; i < fruits.length; i++) {
+    if (i == 2) continue;
+    console.log(fruits[i]);
+  }
 }
-contStatement()
+contStatement();
 //Question 4
-function acceptArr(){
-    const arr=["Val","Eve","Jane","Erick"]
-    arr.forEach((x)=>{
-        console.log(arr)
-    })
+function acceptArr() {
+  const arr = ["Val", "Eve", "Jane", "Erick"];
+  for (i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
 }
-contStatement()
+acceptArr();
 //Question 5
-function takeString(){
-    let a="Patrick"
+function takeString() {
+  let a = "Patrick";
+  let reverseString = "";
+  let i= a.length-1;
+  while(i>=0){
+    reverseString += a[i];
+    i--;
+  }
+console.log(reverseString);
+
 }
+takeString();
